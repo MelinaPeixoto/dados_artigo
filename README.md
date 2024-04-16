@@ -17,12 +17,15 @@ Posteriormente, pretende-se avaliar a viabilidade da utilização do modelo prop
 
 # Limpeza de dados
 1. Manipulação de valores ausentes
+   
 Algumas das técnicas para lidar com valores ausentes incluem excluir linhas ou colunas com valores ausentes, imputar os valores ausentes com uma constante como zero, média, mediana ou modo, interpolar os valores ausentes com uma função linear ou não linear e usar métodos avançados, como vizinhos k-mais próximos, regressão ou modelos de aprendizado de máquina para prever os valores ausentes com base nos recursos e correlações disponíveis. Neste projeto utilizamos a técnica de interpolação linear entre os valores imediatamente anteriores e posteriores para imputar valores ausentes.
 
 2. Identificação de outliers
+   
 Outliers são pontos de dados que se desviam significativamente do intervalo normal ou esperado de valores nos dados. Esses outliers podem ser causados por erros de medição, erros de entrada de dados ou eventos raros e podem distorcer as propriedades estatísticas e os padrões dos dados, bem como afetar o desempenho e a generalização de modelos de aprendizado de máquina. Para remover valores atípicos, estatísticas descritivas como média, desvio padrão, quartis e intervalo interquartil podem ser usadas para filtrar outliers com base em um limiar ou critério. Métodos gráficos como gráficos de caixa, gráficos de dispersão ou histogramas também podem ser empregados para inspecionar visualmente e remover outliers com base na forma e distribuição dos dados. Finalmente, algoritmos de clustering ou classificação como k-means, DBSCAN ou floresta de isolamento podem ser usados para agrupar os pontos de dados em clusters ou classes e remover valores atípicos que pertencem a clusters ou classes pequenas ou anômalas.
 
 3. Transformação de dados
+   
 Os dados de séries temporais podem não ter uma forma ou distribuição desejável ou adequada para modelos de aprendizado de máquina, como assimetria, não estacionariedade, não-linearidade ou não-normalidade. Para enfrentar esse desafio, a transformação de dados é usada para aplicar funções matemáticas ou estatísticas aos dados para alterar sua escala, forma ou distribuição. Técnicas comuns para transformar dados incluem dimensionar ou normalizar os dados para reduzir o intervalo ou a variância dos valores; transformação logarítmica ou exponencial para reduzir a assimetria; diferenciar ou destendar para remover tendência ou sazonalidade; e potência ou transformação Box-Cox para tornar os dados mais lineares e melhorar a homocedasticidade.
 
 # Exploração de dados
