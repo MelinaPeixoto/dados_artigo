@@ -11,10 +11,33 @@ Posteriormente, pretende-se avaliar a viabilidade da utilização do modelo prop
 
 # Contextualização
 
+a exposição de um indivíduo à poluição atmosféica está relacionada à concentração do poluente ao qual o indivído está e ao tempo em que este indivíduo fica exposto. Para saber a exposição diária é preciso considerar o tempo em que um indivíduo permanece em cada ambiente durante o dia. Deve-se considerar ambientes internos e externos.
+
+Os dados de concentração externa dos poluentes estão amplamente disponíveis aos interessados, por meio de estações de monitoramento.
+
+Os dados de concentração interna de um ambiente precisam ser medidos. O monitoramento de ambientes internos para obter os dados de concentração interna toda vez que se deseja calcular a exposição de um indivíduo não é viável.
+
+A solução é realizar uma ou poucas medições em determinado ambiente interno, definir a razão I/O para aquele ambiente e trabalhar com esta relação a longo prazo.
+
+Solução do problema:
+
+Desenvolver um modelo para estimar a concentração interna a partir de dados de concentração externa usando regressão linear simples.
+
+Desenvolver um modelo para estimar a concentração interna a partir de dados de concentração externa e de varáveis meteorológicas usando regressão linear multivariada.
+
+Desenvolver um modelo para estimar a concentração interna a partir de dados a partir de dados de concentração externa e de varáveis meteorológicas usando redes neurais recorrentes.
+
 ![image](https://github.com/MelinaPeixoto/projetos_analise_de_dados/assets/64225698/7901cf57-a26c-4541-a985-ccfec6e60165)
 
 # Coleta de dados
 
+Campanha de monitoramento nos ambientes de interesse para obter amostras de dados de C_in. Utilizar daos das estações de monitoramento da qualidade do ar para abter amostras de dados de C_out. Calcular razão I/O a partir da amostragem. Obter dados do local de interesse.
+
+Extrair dados de C_in e varáveis meteorológicas (T e UR) dos equipamentos utilizados para amostragem.
+
+Extrair dados de C_out e varáveis meteorológicas (T, UR e VELOC e DIR do vento) das estações de monitoramento.
+
+Extrair dados das residências dos dários de campo (DIST da estação, DIST da rodovia mais próxima)
 # Limpeza de dados
 1. Manipulação de valores ausentes
    
